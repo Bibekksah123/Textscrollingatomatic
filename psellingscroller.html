@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>spelling scroller</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: white;
+    }
+    .container{
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+      text-align: center;
+    }
+    .scroller{
+      white-space: nowrap;
+      margin: 0px 2em;
+    }
+    .scroller div{
+      display: flex;
+      gap: 2em;
+    }
+    .scroller p{
+    font-size: 5em;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 0;
+    }
+    .right{
+      animation: animateright 10s infinite linear;
+    }
+    @keyframes animateright{
+      0%{
+        transform: translateX(0);
+      }
+      100%{
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="scroller">
+      <div class="right">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta debitis et eos tempore modi alias, nihil praesentium nam consequatur aut!</p>
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
